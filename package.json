@@ -1,0 +1,31 @@
+{
+  "name": "suphawit.dev",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@evanschleret/nuxt-typewriter": "^1.1.1",
+    "@nuxt/content": "^3.16.1",
+    "@nuxt/image": "^2.1.0",
+    "@nuxtjs/seo": "^5.3.16",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "better-sqlite3": "^13.0.3",
+    "motion-v": "2.6.0",
+    "nuxt": "^4.6.0",
+    "nuxt-lucide-icons": "2.0.0",
+    "vue": "latest",
+    "vue-router": "latest",
+    "zod": "^4.6.5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3"
+    ]
+  }
+}

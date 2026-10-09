@@ -1,0 +1,27 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: StartpageBot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: BraveBot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: *
+Disallow: /admin/
+Disallow: /*?*
+Disallow: /
+
+Sitemap: https:/suphawit.dev/sitemap.xml
