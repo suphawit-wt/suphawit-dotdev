@@ -3,6 +3,7 @@
     <SectionsProjects />
     <SectionsExperience />
     <SectionsSkills />
+    <SectionsCertifications />
 </template>
 
 <script setup lang="ts">

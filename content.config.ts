@@ -46,5 +46,18 @@ export default defineContentConfig({
         { columns: ['priority'] },
       ],
     }),
+    certifications: defineCollection({
+      type: 'page',
+      source: 'certifications/*.md',
+      schema: z.object({
+        title: z.string(),
+        issuer: z.string(),
+        date: z.string(),
+        credential_url: z.url().optional(),
+      }),
+      indexes: [
+        { columns: ['date'] },
+      ],
+    })
   }
 })
