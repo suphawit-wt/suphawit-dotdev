@@ -2,6 +2,7 @@
     <SectionsHero />
     <SectionsProjects />
     <SectionsExperience />
+    <SectionsSkills />
 </template>
 
 <script setup lang="ts">

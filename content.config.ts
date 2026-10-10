@@ -27,12 +27,7 @@ export default defineContentConfig({
         priority: z.number().optional(),
         company: z.string(),
         period: z.string(),
-        achievements: z.array(
-          z.object({
-            title: z.string(),
-            description: z.string(),
-          })
-        ).optional(),
+        achievements: z.array(z.string()).optional(),
         tags: z.array(z.string()).optional(),
       }),
       indexes: [
@@ -51,18 +46,5 @@ export default defineContentConfig({
         { columns: ['priority'] },
       ],
     }),
-    certifications: defineCollection({
-      type: 'page',
-      source: 'certifications/*.md',
-      schema: z.object({
-        title: z.string(),
-        issuer: z.string(),
-        date: z.string(),
-        credential_url: z.url().optional(),
-      }),
-      indexes: [
-        { columns: ['date'] },
-      ],
-    })
   }
 })
